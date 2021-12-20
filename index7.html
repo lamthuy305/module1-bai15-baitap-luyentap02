@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function change(number1, number2) {
+        let number = number1;
+        number1 = number2
+        number2 = number
+        let text = number1 + "," + number2;
+        return text;
+    }
+
+    let number1 = parseInt(prompt("Nhập số nguyên thứ 1"));
+    let number2 = parseInt(prompt("Nhập số nguyên thứ 2"));
+    alert("Hai số sau khi đổi chỗ " + change(number1, number2));
+
+</script>
+</body>
+</html>

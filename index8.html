@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function doiChoChuoi(arr) {
+        for (let i = 0; i < arr.length - 1 - i; i++) {
+            let number = arr[i];
+            arr[i] = arr[arr.length - 1 - i];
+            arr[arr.length - 1 - i] = number;
+        }
+        return arr;
+    }
+    let newArr = [];
+    let doDai = parseInt(prompt("Nhập độ dài mảng"));
+    for (let i = 0; i < doDai; i++) {
+        newArr[i] = parseInt(prompt("Nhập phần tử thứ " + i));
+    }
+    alert("Mảng sau đảo ngược là " + doiChoChuoi(newArr));
+</script>
+</body>
+</html>

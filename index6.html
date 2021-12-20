@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function kiemTraSoDuong(number) {
+        let kiemTra = false;
+        if (number >= 0 && number === parseInt(number)) {
+            kiemTra = true;
+        }
+        return kiemTra;
+    }
+    let number = parseFloat(prompt("Nhập số bất kỳ"));
+    if (kiemTraSoDuong(number) === true) {
+        alert("Bạn đã nhập vào số nguyên dương")
+    } else  {
+        alert("Số bạn nhập không phải nguyên dương")
+    }
+
+</script>
+</body>
+</html>

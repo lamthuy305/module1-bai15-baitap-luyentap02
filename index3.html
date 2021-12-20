@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function tinhGiaiThua(number) {
+      let giaiThua = 1;
+      if (number >= 1) {
+      for (i = 1 ; i <= number ; i++) {
+          giaiThua *= i;
+      }
+      } else if (number === 0) {
+          giaiThua = 1;
+      } else {
+          giaiThua = -1;
+      }
+      return giaiThua;
+  }
+  let number = parseInt(prompt("Nhập số nguyên"));
+  let ketQua = tinhGiaiThua(number);
+  if (ketQua === -1) {
+      alert("Số nhập vào nhỏ hơn hoặc bằng 0")
+  } else {
+      alert("Giai thừa của " + number + " là " + ketQua)
+  }
+</script>
+</body>
+</html>

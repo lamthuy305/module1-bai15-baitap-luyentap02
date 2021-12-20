@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function min(number1, number2, number3) {
+        let kiemTra;
+        if (number1 <= number2) {
+            if (number1 <= number3) {
+            kiemTra = 1;
+        } else {
+            kiemTra = 3;
+            }
+        } else {
+            if (number2 <= number3) {
+                kiemTra = 2;
+            } else {
+                kiemTra = 3;
+            }
+        }
+        return kiemTra;
+    }
+    let number1 = prompt("Nhập số thứ nhất 1")
+    let number2 = prompt("Nhập số thứ nhất 2")
+    let number3 = prompt("Nhập số thứ nhất 3")
+
+    if (min(number1, number2, number3) === 1) {
+        alert("Số nhỏ nhất là " + number1);
+    } else if (min(number1, number2, number3) === 2) {
+        alert("Số nhỏ nhất là " + number2);
+    } else {
+        alert("Số nhỏ nhất là " + number3);
+    }
+</script>
+</body>
+</html>

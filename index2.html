@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function tinhChuVi(number) {
+        chuVi = number * 2 * Math.PI;
+        return chuVi;
+    }
+
+    function tinhDienTich(number) {
+        dienTich = number * number * Math.PI;
+        return dienTich;
+    }
+
+    let number = parseFloat(prompt("Nhập bán kính hình tròn"));
+    let chuViHinhTron = tinhChuVi(number).toFixed(3);
+    let dienTichTron = tinhDienTich(number).toFixed(3);
+    alert("Diện tích hình trong là " + dienTichTron + ", chu vi hình tròn là " + chuViHinhTron);
+
+</script>
+</body>
+</html>
