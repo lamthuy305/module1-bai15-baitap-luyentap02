@@ -7,11 +7,10 @@
 <body>
 <script>
   function timKiem(arr,number) {
-    let index = -1;
+    let index = 0;
     for (let i = 0; i < arr.length ; i++) {
       if (number === arr[i]) {
-        index = i;
-        break;
+        index ++
       }
     }
     return index;
@@ -23,11 +22,12 @@
   }
   number = prompt("Nhập chuỗi tìm kiếm");
   let ketQua = timKiem(newArr,number);
-  if (ketQua === -1) {
-    alert("Chuỗi tìm kiếm không có trong mảng");
+  if (ketQua === 0) {
+    alert("-1")
+    // alert("Chuỗi tìm kiếm không có trong mảng");
   } else {
-
-    alert("Chuỗi tìm kiếm có trong mảng tại vị trí " + ketQua);
+alert(ketQua)
+    // alert("Chuỗi tìm kiếm xuất hiện trong mảng " + ketQua + " lần");
   }
 </script>
 </body>
